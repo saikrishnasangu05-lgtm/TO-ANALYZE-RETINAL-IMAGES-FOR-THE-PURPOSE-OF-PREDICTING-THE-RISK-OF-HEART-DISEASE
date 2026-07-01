@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card shadow p-4">
+
+<h3 class="mb-3">Algorithm Training Results</h3>
+
+<table class="table table-bordered">
+
+<thead class="table-dark">
+
+<tr>
+<th>Algorithm</th>
+<th>Accuracy</th>
+<th>Precision </th>
+<th>Recall</th>
+<th>F1 Score</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+{% for k,v in results.items() %}
+
+<tr>
+<td>{{k}}</td>
+<td>{{"%.2f"|format(v.accuracy * 100)}} %</td>
+<td>{{"%.2f"|format(v.precision * 100)}} %</td>
+<td>{{"%.2f"|format(v.recall * 100)}} %</td>
+<td>{{"%.2f"|format(v.f1 * 100)}} %</td>
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+</div>
+
+{% endblock %}

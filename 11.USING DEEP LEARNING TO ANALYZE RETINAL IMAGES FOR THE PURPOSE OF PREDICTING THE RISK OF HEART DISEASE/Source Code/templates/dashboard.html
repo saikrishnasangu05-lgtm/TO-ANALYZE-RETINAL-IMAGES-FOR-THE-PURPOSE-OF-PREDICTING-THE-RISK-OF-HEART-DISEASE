@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="text-center text-white mb-4">
+
+<h2>USING DEEP LEARNING TO ANALYZE RETINAL IMAGES FOR THE PURPOSE OF PREDICTING THE RISK OF HEART DISEASE</h2>
+<p>Select a module to continue</p>
+
+</div>
+
+<div class="row g-4">
+
+<!-- Upload Dataset -->
+<div class="col-md-3">
+<div class="card h-100 shadow">
+
+<img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png"
+class="card-img-top p-4" style="height:160px; object-fit:contain;">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Upload Dataset</h5>
+
+<a href="/upload_dataset" class="btn btn-primary w-100">
+Open
+</a>
+
+</div>
+</div>
+</div>
+
+<!-- View Dataset -->
+<div class="col-md-3">
+<div class="card h-100 shadow">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png"
+class="card-img-top p-4" style="height:160px; object-fit:contain;">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">View Dataset</h5>
+
+<a href="/view_dataset" class="btn btn-success w-100">
+Open
+</a>
+
+</div>
+</div>
+</div>
+
+<!-- Preprocess -->
+<div class="col-md-3">
+<div class="card h-100 shadow">
+
+<img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+class="card-img-top p-4" style="height:160px; object-fit:contain;">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Preprocess Dataset</h5>
+
+<a href="/preprocess" class="btn btn-warning w-100">
+Open
+</a>
+
+</div>
+</div>
+</div>
+
+<!-- Run Algorithms -->
+<div class="col-md-3">
+<div class="card h-100 shadow">
+
+<img src="https://cdn-icons-png.flaticon.com/512/4149/4149671.png"
+class="card-img-top p-4" style="height:160px; object-fit:contain;">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Run Algorithms</h5>
+
+<a href="/run_algorithms" class="btn btn-danger w-100">
+Open
+</a>
+
+</div>
+</div>
+</div>
+
+<!-- Compare Models -->
+<div class="col-md-3">
+<div class="card h-100 shadow">
+
+<img src="https://cdn-icons-png.flaticon.com/512/4474/4474281.png"
+class="card-img-top p-4" style="height:160px; object-fit:contain;">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Compare Models</h5>
+
+<a href="/compare_models" class="btn btn-info w-100">
+Open
+</a>
+
+</div>
+</div>
+</div>
+
+<!-- Confusion Matrix -->
+<div class="col-md-3">
+<div class="card h-100 shadow">
+
+<img src="https://cdn-icons-png.flaticon.com/512/2881/2881142.png"
+class="card-img-top p-4" style="height:160px; object-fit:contain;">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Confusion Matrix</h5>
+
+<a href="/confusion_matrix" class="btn btn-dark w-100">
+Open
+</a>
+
+</div>
+</div>
+</div>
+
+<!-- Accuracy Graph -->
+<div class="col-md-3">
+<div class="card h-100 shadow">
+
+<img src="https://cdn-icons-png.flaticon.com/512/4290/4290854.png"
+class="card-img-top p-4" style="height:160px; object-fit:contain;">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Accuracy Graph</h5>
+
+<a href="/accuracy_graph" class="btn btn-secondary w-100">
+Open
+</a>
+
+</div>
+</div>
+</div>
+
+<!-- Prediction -->
+<div class="col-md-3">
+<div class="card h-100 shadow">
+
+<img src="https://cdn-icons-png.flaticon.com/512/2966/2966481.png"
+class="card-img-top p-4" style="height:160px; object-fit:contain;">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Predict Disease</h5>
+
+<a href="/upload" class="btn btn-primary w-100">
+Open
+</a>
+
+</div>
+</div>
+</div>
+
+</div>
+
+{% endblock %}
